@@ -1,19 +1,19 @@
 const text = "Software Developer | Java | Python | Web Development"
 
-let index = 0
+let i = 0
 
-function type(){
+function typing(){
 
-document.querySelector(".typing").textContent = text.slice(0,index)
+document.querySelector(".typing").textContent = text.slice(0,i)
 
-index++
+i++
 
-if(index <= text.length){
+if(i <= text.length){
 
-setTimeout(type,80)
-
-}
+setTimeout(typing,80)
 
 }
 
-type()
+}
+
+typing()
