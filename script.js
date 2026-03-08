@@ -1,13 +1,19 @@
-document.querySelectorAll('a').forEach(anchor => {
+const text = "Software Developer | Java | Python | Web Development"
 
-anchor.addEventListener('click', function(e){
+let index = 0
 
-e.preventDefault()
+function type(){
 
-document.querySelector(this.getAttribute('href')).scrollIntoView({
-behavior:'smooth'
-})
+document.querySelector(".typing").textContent = text.slice(0,index)
 
-})
+index++
 
-})
+if(index <= text.length){
+
+setTimeout(type,80)
+
+}
+
+}
+
+type()
