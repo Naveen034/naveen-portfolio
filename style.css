@@ -8,15 +8,22 @@ scroll-behavior:smooth;
 
 }
 
+#particles{
+
+position:fixed;
+width:100%;
+height:100%;
+background:radial-gradient(circle,#1e293b,#020617);
+z-index:-1;
+
+}
+
 nav{
 
 display:flex;
 justify-content:space-between;
-align-items:center;
 padding:20px 10%;
 background:#020617;
-position:sticky;
-top:0;
 
 }
 
@@ -34,9 +41,9 @@ color:#ef4444;
 
 nav ul{
 
-list-style:none;
 display:flex;
 gap:25px;
+list-style:none;
 
 }
 
@@ -44,7 +51,7 @@ nav a{
 
 color:white;
 text-decoration:none;
-transition:0.3s;
+transition:.3s;
 
 }
 
@@ -77,60 +84,60 @@ color:#ef4444;
 
 }
 
-.scroll-down{
+.hero-desc{
 
-margin-top:40px;
-font-size:40px;
+max-width:500px;
 
 }
 
-.scroll-down a{
+.down-arrow{
 
+margin-top:40px;
+font-size:40px;
 color:white;
 text-decoration:none;
-animation: bounce 2s infinite;
+animation:bounce 2s infinite;
 
 }
 
 @keyframes bounce{
 
-0%,100%{transform:translateY(0);}
-50%{transform:translateY(10px);}
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(12px)}
 
 }
 
 section{
 
 padding:80px 10%;
-animation:fadeIn 1s;
+animation:fade 1s;
 
 }
 
 h2{
 
 color:#ef4444;
-margin-bottom:20px;
 
 }
 
-.skills-container{
+.skills{
 
 display:flex;
 flex-wrap:wrap;
-gap:15px;
+gap:20px;
 
 }
 
-.skill{
+.card{
 
-background:#1e293b;
-padding:10px 20px;
+background:rgba(255,255,255,0.05);
+padding:15px 25px;
 border-radius:10px;
 border:1px solid #3b82f6;
 
 }
 
-.projects-grid{
+.projects{
 
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
@@ -138,17 +145,17 @@ gap:20px;
 
 }
 
-.project-card{
+.project{
 
-background:#1e293b;
+background:rgba(255,255,255,0.05);
 padding:20px;
 border-radius:10px;
 border-left:4px solid #ef4444;
-transition:0.3s;
+transition:.3s;
 
 }
 
-.project-card:hover{
+.project:hover{
 
 transform:translateY(-5px);
 
@@ -158,13 +165,12 @@ footer{
 
 text-align:center;
 padding:20px;
-background:#020617;
 
 }
 
-@keyframes fadeIn{
+@keyframes fade{
 
-from{opacity:0;}
-to{opacity:1;}
+from{opacity:0}
+to{opacity:1}
 
 }
