@@ -18,6 +18,18 @@ transform:translateY(0);
 
 }
 
+.cloud-bg{
+
+position:fixed;
+width:100%;
+height:100%;
+
+background:radial-gradient(circle at 30% 30%,#1a1a2e,#000);
+
+z-index:-1;
+
+}
+
 .hero{
 
 text-align:center;
@@ -53,38 +65,44 @@ text-decoration:none;
 
 }
 
-.cloud-bg{
+.menu{
 
-position:fixed;
-width:100%;
-height:100%;
-
-background:radial-gradient(circle at 30% 30%,#1a1a2e,#000);
-
-z-index:-1;
-
-animation:cloudmove 30s linear infinite;
+display:flex;
+justify-content:center;
+gap:40px;
+margin-bottom:40px;
 
 }
 
-@keyframes cloudmove{
+.menu a{
 
-0%{background-position:0 0}
-100%{background-position:1000px 500px}
+color:white;
+font-size:20px;
+text-decoration:none;
+border:1px solid cyan;
+padding:10px 20px;
+border-radius:10px;
+
+}
+
+.menu a:hover{
+
+background:cyan;
+color:black;
 
 }
 
 section{
 
-padding:60px;
 text-align:center;
+padding:60px;
 
 }
 
 .tech-icons img{
 
 width:60px;
-margin:20px;
+margin:25px;
 animation:float 4s infinite;
 
 }
@@ -92,40 +110,8 @@ animation:float 4s infinite;
 @keyframes float{
 
 0%{transform:translateY(0)}
-50%{transform:translateY(-15px)}
+50%{transform:translateY(-20px)}
 100%{transform:translateY(0)}
-
-}
-
-.projects{
-
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:30px;
-padding:40px;
-
-}
-
-.project-card{
-
-background:#141414;
-padding:30px;
-border-radius:20px;
-text-align:center;
-transition:0.4s;
-
-}
-
-.project-card:hover{
-
-transform:translateY(-10px) scale(1.05);
-box-shadow:0 20px 60px rgba(0,255,255,0.4);
-
-}
-
-.project-card img{
-
-width:70px;
 
 }
 
@@ -148,43 +134,32 @@ border-left:4px solid cyan;
 
 }
 
-footer{
+.projects{
 
-text-align:center;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 padding:40px;
-opacity:0.6;
 
 }
 
-.menu{
+.project-card{
 
-display:flex;
-justify-content:center;
-gap:40px;
-margin-top:40px;
-
-}
-
-.menu a{
-
-color:white;
-font-size:20px;
-text-decoration:none;
-padding:10px 20px;
-border:1px solid cyan;
-border-radius:10px;
-transition:0.3s;
-
-}
-
-.menu a:hover{
-
-background:cyan;
-color:black;
-
-}
-
-h1{
+background:#141414;
+padding:30px;
+border-radius:20px;
 text-align:center;
-margin-top:60px;
+
+}
+
+.project-card img{
+
+width:70px;
+
+}
+
+.contact p{
+
+font-size:18px;
+
 }
