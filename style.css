@@ -18,7 +18,6 @@ transform:translateY(0);
 
 }
 
-
 .hero{
 
 text-align:center;
@@ -46,14 +45,13 @@ opacity:0.8;
 
 display:inline-block;
 margin-top:20px;
-padding:10px 25px;
+padding:12px 25px;
 background:#00ffff;
 color:black;
 border-radius:10px;
 text-decoration:none;
 
 }
-
 
 .cloud-bg{
 
@@ -76,12 +74,17 @@ animation:cloudmove 30s linear infinite;
 
 }
 
+section{
+
+padding:60px;
+text-align:center;
+
+}
 
 .tech-icons img{
 
 width:60px;
 margin:20px;
-
 animation:float 4s infinite;
 
 }
@@ -93,7 +96,6 @@ animation:float 4s infinite;
 100%{transform:translateY(0)}
 
 }
-
 
 .projects{
 
@@ -127,7 +129,6 @@ width:70px;
 
 }
 
-
 .timeline{
 
 max-width:700px;
@@ -144,5 +145,13 @@ background:#111;
 padding:20px;
 border-radius:10px;
 border-left:4px solid cyan;
+
+}
+
+footer{
+
+text-align:center;
+padding:40px;
+opacity:0.6;
 
 }
